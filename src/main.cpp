@@ -14,7 +14,7 @@ void setup()
     pinMode(motorPins[i], OUTPUT);
     analogWrite(motorPins[i], 0);
   }
-
+  pinMode(MISO, OUTPUT);
   // Initialize SPI communication in mode 0 and enable SPI interrupt
   SPI.setDataMode(SPI_MODE0);
   SPCR |= _BV(SPE);
@@ -43,4 +43,6 @@ void loop()
       }
     }
   }
+  else delay(200);
+  delay(15);
 }
