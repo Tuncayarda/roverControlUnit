@@ -10,4 +10,4 @@ const int motorPins[] = {2, 3, 5, 4, 6, 7, 13, 12, 10, 11, 9, 8};
 Servo servos[NUM_SERVO_PINS];
 
 // Initial angle positions for each servo (used as base positions)
-const int servoInitial[] = {62, 70, 71, 110, 123, 106};
+const int servoInitial[] = {62, 70, 71, 110, 123, 105};
