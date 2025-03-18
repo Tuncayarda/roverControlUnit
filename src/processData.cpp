@@ -28,7 +28,6 @@ void processData(volatile byte* buffer)
 	
 	// Set servo angles
 	setServos(servoAngles);
-	
 	// Drive motors with the processed values
 	driveMotors(motorValues);
 }
