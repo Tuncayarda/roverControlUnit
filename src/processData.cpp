@@ -7,7 +7,7 @@ void processData(volatile byte* buffer)
 	int servoAngles[6];
 	for (int i = 0; i < 6; i++) {
 		int8_t signedByte = static_cast<int8_t>(buffer[1 + i]);
-		servoAngles[i] = constrain(signedByte, -45, 45);
+		servoAngles[i] = signedByte;
 	}
 	
 	// Extract motor values from buffer[7] to buffer[18] (2 bytes per value)
